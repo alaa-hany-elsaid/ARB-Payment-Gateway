@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Egyjs Test Suite">
+        <testsuite name="Alaa Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

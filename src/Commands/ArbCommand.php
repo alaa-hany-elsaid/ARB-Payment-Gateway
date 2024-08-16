@@ -1,6 +1,6 @@
 <?php
 
-namespace Egyjs\Arb\Commands;
+namespace Alaa\Arb\Commands;
 
 use Illuminate\Console\Command;
 

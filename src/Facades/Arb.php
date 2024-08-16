@@ -1,18 +1,18 @@
 <?php
 
-namespace Egyjs\Arb\Facades;
+namespace Alaa\Arb\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @mixin \Egyjs\Arb\Arb
+ * @mixin \Alaa\Arb\Arb
  *
- * @see \Egyjs\Arb\Arb
+ * @see \Alaa\Arb\Arb
  */
 class Arb extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \Egyjs\Arb\Arb::class;
+        return \Alaa\Arb\Arb::class;
     }
 }

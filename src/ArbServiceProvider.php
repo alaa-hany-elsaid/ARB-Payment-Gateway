@@ -1,8 +1,8 @@
 <?php
 
-namespace Egyjs\Arb;
+namespace Alaa\Arb;
 
-use Egyjs\Arb\Commands\ArbCommand;
+use Alaa\Arb\Commands\ArbCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

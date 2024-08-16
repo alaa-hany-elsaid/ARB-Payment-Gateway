@@ -7,9 +7,9 @@
  * It also handles the encryption and decryption of data for secure transactions.
  */
 
-namespace Egyjs\Arb;
+namespace Alaa\Arb;
 
-use Egyjs\Arb\Objects\Card;
+use Alaa\Arb\Objects\Card;
 use Illuminate\Support\Facades\Http;
 
 class Arb
@@ -37,10 +37,10 @@ class Arb
     /**
      * Initiates a payment request.
      *
-     * @param  int  $amount  The amount to be paid.
+     * @param  int|float  $amount  The amount to be paid.
      * @return object The response from the payment gateway.
      */
-    public function initiatePayment(int $amount): object
+    public function initiatePayment(int|float $amount): object
     {
         // todo get order id or something
         $trackId = uniqid($amount * time());

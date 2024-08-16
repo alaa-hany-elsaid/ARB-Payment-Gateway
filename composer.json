@@ -1,24 +1,17 @@
 {
-    "name": "egyjs/arb",
+    "name": "alaa-elsaid/arb",
     "description": "Laravel API for Al Rajhi Bank's payment gateway (ARB)",
     "keywords": [
         "egyjs",
         "laravel",
         "arb"
     ],
-    "homepage": "https://github.com/egyjs/arb",
+    "homepage": "https://github.com/alaa-hany-elsaid/ARB-Payment-Gateway",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "egyjs",
-            "email": "el3zahaby@gmail.com",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0",
+        "illuminate/contracts": "^9.0||^10.0||^11.0",
         "ext-openssl": "*"
     },
     "require-dev": {
@@ -31,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Egyjs\\Arb\\": "src/",
-            "Egyjs\\Arb\\Database\\Factories\\": "database/factories/"
+            "Alaa\\Arb\\": "src/",
+            "Alaa\\Arb\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Egyjs\\Arb\\Tests\\": "tests/",
+            "Alaa\\Arb\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -69,10 +62,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Egyjs\\Arb\\ArbServiceProvider"
+                "Alaa\\Arb\\ArbServiceProvider"
             ],
             "aliases": {
-                "Arb": "Egyjs\\Arb\\Facades\\Arb"
+                "Arb": "Alaa\\Arb\\Facades\\Arb"
             }
         }
     },

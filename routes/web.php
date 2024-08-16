@@ -1,9 +1,9 @@
 <?php
 
-use Egyjs\Arb\Events\ArbPaymentFailedEvent;
-use Egyjs\Arb\Events\ArbPaymentSuccessEvent;
-use Egyjs\Arb\Facades\Arb;
-use Egyjs\Arb\Objects\Responses\SuccessPaymentResponse;
+use Alaa\Arb\Events\ArbPaymentFailedEvent;
+use Alaa\Arb\Events\ArbPaymentSuccessEvent;
+use Alaa\Arb\Facades\Arb;
+use Alaa\Arb\Objects\Responses\SuccessPaymentResponse;
 
 Route::post('/arb/response', function () {
     if (request()->has('trandata')) {
@@ -16,6 +16,6 @@ Route::post('/arb/response', function () {
             // payment failed
             event(new ArbPaymentFailedEvent($result->data));
         }
-        dd($result);
+
     }
 });

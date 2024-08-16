@@ -1,6 +1,6 @@
 <?php
 
-namespace Egyjs\Arb\Objects;
+namespace Alaa\Arb\Objects;
 
 class Card
 {
